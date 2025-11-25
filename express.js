@@ -4,6 +4,10 @@ const port = process.env.PORT || 3000
 
 app.use(express.json());
 
+app.get('',(req,res)=>{
+  console.log(req.query);
+  res.send('Hola mundo');
+})
 app.get('/alumnos', (req, res) => {
   console.log(req.query);
   res.send('23100151');
